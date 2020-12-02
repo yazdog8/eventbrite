@@ -3,7 +3,7 @@
 This repository is a boilerplate for you to use as a starting point for your exercise.
 Feel free to change anything on it, this is here only to speed you up on getting started. If you need to change any configurations or add/remove packages or code feel free to do so.
 
-## About this repository.
+## About this repository
 
 This repo has all the basic dependencies needed to create a React application.
 - It uses [NPM](https://docs.npmjs.com/) to manage javascript dependencies like [React](https://reactjs.org/docs/getting-started.html) and [React DOM](https://reactjs.org/docs/react-dom.html).
@@ -13,6 +13,9 @@ This repo has all the basic dependencies needed to create a React application.
 
 To run this repository you will need to have installed
 - [Nodejs and NPM](https://nodejs.org/en/download/)
+
+## Getting started
+Fork the repo and follow the steps below. You'll then push up your solution in your forked repo to submit.
 
 ### Running the application
 To run the application open a terminal on the project root folder and run
