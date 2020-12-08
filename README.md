@@ -68,7 +68,7 @@ Build a checkout experience! As you know, Eventbrite is an events platform where
 
 ### Resources
 
-- [QA event to use as a model](https://www.evbqa.com/e/principal-fe-interview-tickets-82187949369)
+- [Prod event to use as a model](https://www.eventbrite.com/e/eventbrite-engineering-tickets-132121337477)
 - [API docs and access to an API key](https://www.eventbrite.com/platform/)
 - [Orders documentation](https://www.eventbrite.com/platform/docs/orders)
     * Only our `GET` endpoint for orders are public and you can access those above but you'll need to mock out the `POST` request for the order
