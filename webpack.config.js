@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
@@ -15,6 +17,12 @@ module.exports = {
         pathRewrite: { "^/api": "" },
       },
     },
+  },
+  resolve: {
+    alias: {
+      data: path.resolve(__dirname, "src/data/"),
+    },
+    extensions: [".js", ".jsx", ".css"],
   },
   module: {
     rules: [
