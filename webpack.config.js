@@ -1,33 +1,38 @@
 module.exports = {
-  entry: './src/index.js',
-  mode: 'development',
+  entry: "./src/index.js",
+  mode: "development",
   output: {
-    filename: 'main.js',
+    filename: "main.js",
   },
   devServer: {
-    contentBase: '.',
+    contentBase: ".",
     watchContentBase: true,
     liveReload: true,
     overlay: true,
     proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        pathRewrite: {'^/api' : ''}
-      }
-    }
+      "/api": {
+        target: "http://localhost:3000",
+        pathRewrite: { "^/api": "" },
+      },
+    },
   },
   module: {
     rules: [
-        {
+      {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env', '@babel/preset-react']
-            }
-        }
-        }
-    ]
-    }
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env", "@babel/preset-react"],
+          },
+        },
+      },
+      {
+        test: /\.css/,
+        exclude: /(node_modules)/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
