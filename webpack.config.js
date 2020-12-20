@@ -21,6 +21,7 @@ module.exports = {
   resolve: {
     alias: {
       data: path.resolve(__dirname, "src/data/"),
+      common: path.resolve(__dirname, "src/common/"),
     },
     extensions: [".js", ".jsx", ".css"],
   },
@@ -37,9 +38,12 @@ module.exports = {
         },
       },
       {
-        test: /\.css/,
-        exclude: /(node_modules)/,
+        test: /\.css$/,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+        loader: "file-loader?name=assets/[name].[hash].[ext]",
       },
     ],
   },
