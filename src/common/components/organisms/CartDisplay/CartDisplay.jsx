@@ -4,7 +4,9 @@ import CheckoutCart from "common/components/molecules/CheckoutCart/CheckoutCart"
 import EventCart from "common/components/molecules/EventCart/EventCart";
 
 const CartDisplay = (props) => {
-  // useEffect(() => {}, []);
+  useEffect(() => {
+    fetch("./api/event/132121337477").then((response) => response.json());
+  }, []);
 
   return (
     <div>
